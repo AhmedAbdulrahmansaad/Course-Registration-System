@@ -16,7 +16,9 @@
     "@supabase/supabase-js": "^2.38.4",
     "framer-motion": "^10.16.5",
     "lucide-react": "^0.294.0",
-    "zustand": "^4.4.7"
+    "zustand": "^4.4.7",
+    "recharts": "^2.10.3",
+    "react-hook-form": "^7.49.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

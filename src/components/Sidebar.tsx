@@ -12,6 +12,10 @@ import {
   LogOut,
   Menu,
   X,
+  GraduationCap,
+  Calculator,
+  Clock,
+  User,
 } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 import { useLanguage } from '../contexts/LanguageContext'
@@ -29,7 +33,11 @@ export default function Sidebar() {
     { path: '/student/courses', icon: BookOpen, label: 'nav.courses' },
     { path: '/student/register', icon: FileText, label: 'nav.register' },
     { path: '/student/schedule', icon: Calendar, label: 'nav.schedule' },
+    { path: '/student/weekly-schedule', icon: Clock, label: 'nav.weeklySchedule' },
+    { path: '/student/transcript', icon: GraduationCap, label: 'nav.transcript' },
+    { path: '/student/gpa-calculator', icon: Calculator, label: 'nav.gpaCalculator' },
     { path: '/student/requests', icon: FileText, label: 'nav.requests' },
+    { path: '/student/profile', icon: User, label: 'nav.profile' },
     { path: '/student/chat', icon: MessageSquare, label: 'nav.chat' },
   ]
 
@@ -43,6 +51,7 @@ export default function Sidebar() {
     { path: '/admin/dashboard', icon: LayoutDashboard, label: 'nav.dashboard' },
     { path: '/admin/courses', icon: BookOpen, label: 'nav.courses' },
     { path: '/admin/students', icon: Users, label: 'nav.students' },
+    { path: '/admin/majors-levels', icon: Settings, label: 'nav.majorsLevels' },
     { path: '/admin/settings', icon: Settings, label: 'nav.settings' },
     { path: '/admin/notifications', icon: Bell, label: 'nav.notifications' },
   ]

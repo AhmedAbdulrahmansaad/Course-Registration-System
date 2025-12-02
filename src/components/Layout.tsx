@@ -1,6 +1,7 @@
 import { ReactNode } from 'react'
 import Sidebar from './Sidebar'
 import Topbar from './Topbar'
+import AIChatbot from './AIChatbot'
 
 interface LayoutProps {
   children: ReactNode
@@ -16,7 +17,7 @@ export default function Layout({ children }: LayoutProps) {
           {children}
         </main>
       </div>
+      <AIChatbot />
     </div>
   )
 }
-

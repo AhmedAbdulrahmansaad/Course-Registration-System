@@ -7,7 +7,15 @@
     @apply border-border;
   }
   body {
-    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors;
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors font-sans;
+  }
+  
+  [dir="rtl"] {
+    font-family: 'Cairo', 'Tajawal', system-ui, sans-serif;
+  }
+  
+  [dir="ltr"] {
+    font-family: 'Inter', 'Poppins', system-ui, sans-serif;
   }
 }
 
@@ -17,6 +25,14 @@
   }
   .ltr {
     direction: ltr;
+  }
+  
+  .font-arabic {
+    font-family: 'Cairo', 'Tajawal', system-ui, sans-serif;
+  }
+  
+  .font-english {
+    font-family: 'Inter', 'Poppins', system-ui, sans-serif;
   }
 }
 

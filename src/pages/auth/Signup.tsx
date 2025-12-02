@@ -10,7 +10,7 @@ export default function Signup() {
     email: '',
     password: '',
     fullName: '',
-    role: 'student' as 'student' | 'advisor' | 'admin',
+    role: 'student' as const,
     studentId: '',
     major: '',
     level: '',
@@ -129,23 +129,6 @@ export default function Signup() {
                 className="w-full pl-10 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent"
               />
             </div>
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-              {t('auth.role')}
-            </label>
-            <select
-              name="role"
-              value={formData.role}
-              onChange={handleChange}
-              required
-              className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-            >
-              <option value="student">Student</option>
-              <option value="advisor">Advisor</option>
-              <option value="admin">Admin</option>
-            </select>
           </div>
 
           {formData.role === 'student' && (
